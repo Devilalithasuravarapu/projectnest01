@@ -1,0 +1,131 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Project</title>
+    <!-- Add your CSS link here if you have a separate stylesheet -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+
+    <header>
+        <h1>Weather Project</h1>
+    </header>
+
+    <section>
+        <h2>Welcome to our Weather App</h2>
+        <p>Get real-time weather updates and more.</p>
+        <!-- You can add more introductory content or features here -->
+    </section>
+
+    <section>
+        <h2>Check the Weather</h2>
+        <!-- Add your weather-related content here -->
+        <form action="weather.php" method="post">
+            <label for="location">Enter Location:</label>
+            <input type="text" id="location" name="location" required>
+            <button type="submit">Get Weather</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Weather Project. All rights reserved.</p>
+    </footer>
+
+    <!-- Add your JavaScript link here if you have a separate script -->
+    <!-- <script src="script.js"></script> -->
+
+</body>
+</html>
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Project</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Weather Project</h1>
+    </header>
+
+    <section>
+        <h2>Welcome to our Weather App</h2>
+        <p>Get real-time weather updates and more.</p>
+        <form action="weather.php" method="post">
+            <label for="location">Enter Location:</label>
+            <input type="text" id="location" name="location" required>
+            <button type="submit">Get Weather</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Weather Project. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

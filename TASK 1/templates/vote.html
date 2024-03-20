@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vote</title>
+    <style>
+        /* Define styles for the voting container */
+        .voting-container {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Define styles for the voting buttons */
+        .vote-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style for the voting results */
+        .vote-results {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="voting-container">
+        <h2>Do you like this website?</h2>
+        <button class="vote-button" id="yes-button">Yes</button>
+        <button class="vote-button" id="no-button">No</button>
+        <div class="vote-results">
+            <p id="yes-count">0</p>
+            <p id="no-count">0</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle the voting logic
+        const yesButton = document.getElementById('yes-button');
+        const noButton = document.getElementById('no-button');
+        const yesCount = document.getElementById('yes-count');
+        const noCount = document.getElementById('no-count');
+        let yesVotes = 0;
+        let noVotes = 0;
+
+        yesButton.addEventListener('click', () => {
+            yesVotes++;
+            yesCount.textContent = `Yes: ${yesVotes}`;
+        });
+
+        noButton.addEventListener('click', () => {
+            noVotes++;
+            noCount.textContent = `No: ${noVotes}`;
+        });
+    </script>
+</body>
+</html>
